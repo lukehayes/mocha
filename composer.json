@@ -6,11 +6,13 @@
             "email": "lukepurplehayes@gmail.com"
         }
     ],
+
     "require": {},
     "autoload": {
 
         "psr-4": {
-            "Mocha\\" : "Mocha/"
+            "Mocha\\" : "Mocha/",
+            "Mocha\\Annotation\\" : "Mocha/Annotation/"
         }
     }
 }
