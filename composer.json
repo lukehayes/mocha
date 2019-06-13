@@ -1,0 +1,10 @@
+{
+    "name": "lukehayes/mocha",
+    "authors": [
+        {
+            "name": "lukehayes",
+            "email": "lukepurplehayes@gmail.com"
+        }
+    ],
+    "require": {}
+}
