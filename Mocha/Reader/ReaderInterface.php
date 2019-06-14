@@ -10,5 +10,5 @@ interface ReaderInterface {
      * Read in some data
      * @return string Read data in
      */
-    public function read();
+    public function read() : string;
 }
