@@ -1,7 +1,7 @@
-<?php 
-namespace Mocha\Annotation; 
+<?php
+namespace Mocha\Annotation;
 
-use Mocha\Annotation\ParserInterface;
+use Mocha\Parser\ParserInterface;
 use Mocha\Annotation\Tag;
 
 /**
@@ -9,7 +9,7 @@ use Mocha\Annotation\Tag;
  */
 class Annotation implements ParserInterface
 {
-	
+
 	function __construct() {
 	}
 
