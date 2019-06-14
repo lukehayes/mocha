@@ -9,6 +9,6 @@ class Tag {
 	/**
 	 * Any '@mocha-'' tag
 	 */
-	const TAG = "/@[a-z]+\-(\w+)/";
+	const TAG = "/@[mocha-]+\-(\w+)/";
 }
 
