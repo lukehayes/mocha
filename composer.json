@@ -17,7 +17,8 @@
             "Mocha\\": "Mocha/",
             "Mocha\\Annotation\\": "Mocha/Annotation/",
             "Mocha\\Parser\\": "Mocha/Parser/",
-            "Mocha\\Reader\\": "Mocha/Reader/"
+            "Mocha\\Reader\\": "Mocha/Reader/",
+            "Mocha\\Exception\\": "Mocha/Exception/"
         }
     }
 }
