@@ -1,14 +1,18 @@
 <?php 
 namespace Mocha\Annotation; 
 
+use Mocha\Annotation\ParserInterface;
+
 /**
  * A base class for annotations
  */
-class Annotation 
+class Annotation implements ParserInterface
 {
 	
 	function __construct() {
-		dump(__CLASS__);
 	}
+
+    public function parse() {
+    }
 }
 
