@@ -6,6 +6,9 @@ namespace Mocha\Annotation;
  */
 class Tag {
 
-	const PAGE = "/@[a-z]+\-(\w+)/";
+	/**
+	 * Any '@mocha-'' tag
+	 */
+	const TAG = "/@[a-z]+\-(\w+)/";
 }
 
