@@ -14,7 +14,8 @@
 
     "autoload": {
         "psr-4": {
-            "Mocha\\": "Mocha/"
+            "Mocha\\": "Mocha/",
+            "Mocha\\Annotatio\\": "Mocha/Annotation/"
         }
     }
 }
