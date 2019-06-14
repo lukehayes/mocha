@@ -8,7 +8,8 @@ interface ReaderInterface {
 
     /**
      * Read in some data
+     * @param  string $file Path to file
      * @return string Read data in
      */
-    public function read() : string;
+    public function read($file) : string;
 }
