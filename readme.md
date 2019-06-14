@@ -1,5 +1,3 @@
-![Mocha](assets/mocha.png)
-
 # Mocha
 
 I'm building a simple static site generator in PHP.
