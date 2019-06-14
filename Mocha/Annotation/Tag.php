@@ -1,8 +1,9 @@
-<?php 
+<?php
 namespace Mocha\Annotation;
 
 /**
- * Represents an annotation tag
+ * Tag holds const strings that represent
+ * possible Mocha tags
  */
 class Tag {
 
