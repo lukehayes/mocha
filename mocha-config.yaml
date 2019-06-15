@@ -1,0 +1,5 @@
+#
+# Mocha configuration options can be defined in this file
+#
+
+search_dirs: "Mocha"
