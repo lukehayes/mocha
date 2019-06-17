@@ -16,6 +16,7 @@
         "psr-4": {
             "Mocha\\": "Mocha/",
             "Mocha\\Annotation\\": "Mocha/Annotation/",
+            "Mocha\\Collections\\": "Mocha/Collections/",
             "Mocha\\Parser\\": "Mocha/Parser/",
             "Mocha\\Reader\\": "Mocha/Reader/",
             "Mocha\\Exception\\": "Mocha/Exception/"
