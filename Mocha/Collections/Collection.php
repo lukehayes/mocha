@@ -55,7 +55,7 @@ class Collection implements \Countable, \Iterator {
 	}
 
 	public function valid() : bool {
-		return array_key_exists($this->elements[$this->index], $this->elements) ? 1 : 0;
+		return isset($this->elements[$this->index]);
 	}
 
 }
