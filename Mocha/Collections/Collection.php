@@ -18,9 +18,8 @@ class Collection implements \Countable, \Iterator {
 	}
 
 	public function current() {
-		if( $this->elements[$this->index] ) {
-			return $this->elements[$this->index];
-		}
+		$current = $this->elements[$this->index];
+		if($current) return $current;
 		return false;
 	}
 
@@ -41,7 +40,6 @@ class Collection implements \Countable, \Iterator {
 
 	public function valid() : bool {
 		return array_key_exists($this->elements[$this->index], $this->elements) ? 1 : 0;
-		// return 1;
 	}
 
 }
