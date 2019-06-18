@@ -1,10 +1,10 @@
 <?php 
-namespace Mocha\Parser; 
+namespace Mocha\Collections; 
 
 /**
- * Clas is used to hold all of the matches
+ * Class is used to hold all of the matches
  * of Mocha tags that have been found
  */
-class MatchCollection {
+class MatchCollection extends Collection {
 }
 
