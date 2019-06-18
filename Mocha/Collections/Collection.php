@@ -17,7 +17,7 @@ class Collection implements \Countable, \Iterator {
 		return count($this->elements);
 	}
 
-	public function current() : mixed {
+	public function current() {
 		if( $this->elements[$this->index] ) {
 			return $this->elements[$this->index];
 		}
