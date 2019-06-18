@@ -9,7 +9,8 @@
 
     "require": {
         "symfony/var-dumper": "^4.3",
-        "symfony/yaml": "^4.3"
+        "symfony/yaml": "^4.3",
+        "psr/container": "^1.0"
     },
 
     "autoload": {
