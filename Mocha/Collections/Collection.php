@@ -9,6 +9,22 @@ class Collection implements \Countable, \Iterator {
 	private $index = 0;
 
 	/**
+	 * Add an element to the collection
+	 * @param Mixed $element The element to be added
+	 */
+	public function add($element) {
+		array_push($this->elements, $element);
+	}
+
+	/**
+	 * Remove the last element from the collection
+	 * @param Mixed $element The element to be added
+	 */
+	public function pop() {
+		return array_pop($this->elements);
+	}
+
+	/**
 	 * Count the number of elements that are
 	 * in our collection
 	 * @return
