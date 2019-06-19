@@ -14,6 +14,10 @@ class FileReader implements ReaderInterface {
      */
     private $file = NULL;
 
+    /**
+     * Constructor
+     * @param string $file Path to the file
+     */
     public function __construct($file) {
         $this->file = $file;
     }
