@@ -1,5 +1,5 @@
 <?php 
-namespace Mocha\Collections; 
+namespace Mocha\Collection; 
 
 /**
  * Class is used to hold all of the matches

@@ -1,5 +1,5 @@
 <?php 
-namespace Mocha\Collections; 
+namespace Mocha\Collection; 
 
 /**
  * Base collection class for Mocha
