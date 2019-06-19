@@ -8,6 +8,10 @@ class Collection implements \Countable, \Iterator {
 	protected $elements = [];
 	private $index = 0;
 
+	public function __construct(array $elements) {
+		$this->elements = $elements;
+	}
+
 	/**
 	 * Add an element to the collection
 	 * @param Mixed $element The element to be added
