@@ -6,10 +6,10 @@ I'm building a simple static site generator in PHP.
 
 - [x] File Reading
 
-- [] Annotations parseing
+- [ ] Annotations parseing
 
-- [] Add markdown into project
+- [ ] Add markdown into project
 
-- [] Creating config yaml files
+- [ ] Creating config yaml files
 
-- [] Build a complete site
+- [ ] Build a complete site
