@@ -3,3 +3,4 @@
 #
 
 search_dirs: "Mocha"
+template_dir: "Mocha/templates"
