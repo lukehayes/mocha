@@ -3,7 +3,7 @@
 namespace Mocha\Exception;
 
 /**
- * Custom execption for when a file could not be found
+ * Custom execption for when template files could not be found
  */
 class TemplatesNotFoundException extends \Exception {
 
