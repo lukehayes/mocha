@@ -4,3 +4,5 @@
 
 search_dirs: "Mocha"
 template_dir: "Mocha/templates"
+site_url: "localhost:5000"
+site_title: "Default Mocha Build"
