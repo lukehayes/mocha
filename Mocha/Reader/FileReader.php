@@ -35,9 +35,7 @@ class FileReader implements ReaderInterface {
             throw new FileNotFoundException($this->file);
         }
 
-        $handle = fopen($this->file, "r");
-        $contents = fread($handle, filesize($this->file));
-        fclose($handle);
+        $contents = file_get_contents($this->file);
 
         return $contents;
     }
