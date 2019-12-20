@@ -19,7 +19,9 @@ class FileReader implements ReaderInterface {
      * @param string $file Path to the file
      */
     public function __construct($file) {
-        $this->file = $file;
+        $this->file = getcwd() . "/" . $file;
+
+        dump($this->file);
     }
 
     /**
@@ -36,6 +38,7 @@ class FileReader implements ReaderInterface {
         }
 
         $contents = file_get_contents($this->file);
+        dump($contents);
 
         return $contents;
     }
