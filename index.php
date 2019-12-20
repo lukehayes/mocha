@@ -18,9 +18,4 @@ $parser = new MarkdownParser($fr->read());
 dump($fr);
 dump($parser->parse());
 
-//$matches = [];
-//$res = preg_match_all(Tag::MOCHA_TAG, $fr->read(), $matches, PREG_PATTERN_ORDER);
-
-//dump($matches);
-
 
