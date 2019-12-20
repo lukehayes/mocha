@@ -11,11 +11,8 @@ $configObject = new ConfigParser();
 $config = $configObject->parse();
 
 $a = new Annotation();
-$fr = new FileReader($config["template_dir"] . "/hello.md");
 
-dump(file_get_contents(dirname(__FILE__) . "/" . $config["template_dir"] . "/hello.md"));
-$parser = new MarkdownParser($fr->read());
-dump($fr);
-dump($parser->parse());
+$fr = new FileReader("front-end");
+dump($fr->read());
 
 
