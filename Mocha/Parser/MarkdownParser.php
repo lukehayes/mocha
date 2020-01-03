@@ -30,7 +30,7 @@ class MarkdownParser implements ParserInterface {
         }
 
         // Strip all of the \n characters for easier parsing
-        $this->markdown = str_replace("\n","", $markdown);
+        $this->markdown = str_replace("\n"," ", $markdown);
     }
     
     /**
@@ -41,7 +41,7 @@ class MarkdownParser implements ParserInterface {
     public function parse() {
         $parsed_markdown = [];
         $lines = $this->split();
-        
+
         // TODO
     }
     
@@ -54,7 +54,7 @@ class MarkdownParser implements ParserInterface {
     private function split() : array {
 
         // Split markdown into lines
-        $split = preg_split('#\n#',$this->markdown);
+        $split = preg_split('#\n#',$this->markdown, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
         
         // Filter through split to remove empty lines
         $this->lines = array_filter($split, function($line) {
