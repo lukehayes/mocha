@@ -29,7 +29,8 @@ class MarkdownParser implements ParserInterface {
             throw new \Exception("Data passed into constructor must be a string!");
         }
 
-        $this->markdown = $markdown;
+        // Strip all of the \n characters for easier parsing
+        $this->markdown = str_replace("\n","", $markdown);
     }
     
     /**
