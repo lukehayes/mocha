@@ -20,6 +20,6 @@ class Tag {
 	/**
 	 * Represents the '@mocha-title' annotation
 	 */
-	const MOCHA_TITLE = "/(@mocha-title)\s(\w+)/";
+	const MOCHA_TITLE = "/(@mocha-title)(\s([a-zA-Z]+))+/";
 }
 
