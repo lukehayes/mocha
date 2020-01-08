@@ -15,7 +15,7 @@ class Tag {
 	/**
 	 * Represents the '@mocha-date' annotation
 	 */
-	const MOCHA_DATE = "/(@mocha-date)\s(\w+)/";
+	const MOCHA_DATE = "/(@mocha-date)\s(\d{2}\/){2}\d{2,4} /";
 
 	/**
 	 * Represents the '@mocha-title' annotation
