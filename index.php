@@ -15,4 +15,8 @@ $a = new Annotation();
 $fr = new FileReader("front-end/hello.md");
 dump($fr->read());
 
+$parser = new MarkdownParser($fr->read());
+$res = $parser->parse();
+
+dump($res);
 
