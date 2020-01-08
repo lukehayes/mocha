@@ -54,7 +54,7 @@ class MarkdownParser implements ParserInterface {
     private function split() : array {
 
         // Split markdown into lines
-        $split = preg_split('#\n#',$this->markdown, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
+        $split = preg_split('#\n#',$this->markdown);
         
         // Filter through split to remove empty lines
         $this->lines = array_filter($split, function($line) {
