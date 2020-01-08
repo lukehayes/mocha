@@ -12,7 +12,7 @@ $config = $configObject->parse();
 
 $a = new Annotation();
 
-$fr = new FileReader("front-end");
+$fr = new FileReader("front-end/hello.md");
 dump($fr->read());
 
 
