@@ -8,12 +8,14 @@ class AnnotationMatch {
 
     /**
      * The name of the found match
+     *
      * @var
      */
     private $title = NULL;
 
     /**
      * The value of the found match
+     *
      * @var
      */
     private $value = NULL;

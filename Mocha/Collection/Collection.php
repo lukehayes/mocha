@@ -14,6 +14,7 @@ class Collection implements \Countable, \Iterator {
 
 	/**
 	 * Add an element to the collection
+     *
 	 * @param Mixed $element The element to be added
 	 */
 	public function add($element) {
@@ -22,6 +23,7 @@ class Collection implements \Countable, \Iterator {
 
 	/**
 	 * Remove the last element from the collection
+     * 
 	 * @param Mixed $element The element to be added
 	 */
 	public function pop() {
@@ -31,6 +33,7 @@ class Collection implements \Countable, \Iterator {
 	/**
 	 * Count the number of elements that are
 	 * in our collection
+     *
 	 * @return
 	 */
 	public function count() : int {

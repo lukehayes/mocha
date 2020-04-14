@@ -7,7 +7,8 @@ namespace Mocha\Reader;
 interface ReaderInterface {
 
     /**
-     * Read in some data
+     * Read the data in
+     *
      * @return string Read data in
      */
     public function read() : string;

@@ -10,12 +10,14 @@ class FileReader implements ReaderInterface {
 
     /**
      * Name of the file to read
+     *
      * @var
      */
     private $file = NULL;
 
     /**
      * Constructor
+     *
      * @param string $file Path to the file
      */
     public function __construct($file) {
@@ -24,6 +26,7 @@ class FileReader implements ReaderInterface {
 
     /**
      * Open a file, read it and return as a string
+     *
      * @param  string $file Path to file
      * @return string Read data in
      *
