@@ -10,15 +10,11 @@ use Symfony\Component\Yaml\Exception\ParseException;
  *  written in YAML and parse it accordingly
  * 
  * @package Parser
- * @author Luke Hayes
  */
 class ConfigParser implements ParserInterface {
 
     /**
-     * Path to the Mocha config file that
-     * we want to parse
-     *
-     * @var
+     * @var string | null   Path to the configuration file
      */
     private $configFile = NULL;
 
