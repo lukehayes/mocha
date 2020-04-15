@@ -5,7 +5,13 @@ use Mocha\Parser\ParserInterface;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;
 
-
+/**
+ *  Config Parser can read in a configuation file
+ *  written in YAML and parse it accordingly
+ * 
+ * @package Parser
+ * @author Luke Hayes
+ */
 class ConfigParser implements ParserInterface {
 
     /**
