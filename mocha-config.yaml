@@ -3,7 +3,7 @@
 #
 
 search_dirs: "Mocha"
-template_dir: "front-end"
+pages_dir: "pages"
 site_url: "localhost:5000"
 site_title: "Default Mocha Build"
 build_dir: "site"
