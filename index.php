@@ -11,4 +11,10 @@ $config = $configObject->parse();
 $fr = new FileReader("front-end/hello.md");
 $parsedown = new Parsedown();
 
-echo $parsedown->text($fr->read());
+foreach(new DirectoryIterator($config['template_dir']) as $f) {
+
+    if( $f->getExtension() == "md" ) {
+        $reader = new FileReader($f->getPathname());
+        echo $parsedown->text($reader->read());
+    }
+}
