@@ -7,7 +7,7 @@ namespace Mocha\Exception;
 class FileNotFoundException extends \Exception {
 
     public function __construct($file) {
-        $message = "The file <strong>". $file . "</strong> could not be found.";
+        $message = "The file {$file} could not be found.";
         parent::__construct($message);
     }
 }
