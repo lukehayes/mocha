@@ -10,19 +10,22 @@ namespace Mocha\Parser;
 class MarkdownParser implements ParserInterface {
     
     /**
-     * The markdown content that we want to parse
-     *
-     * @var string | NULL
+     * @var string | NULL   The markdown content that we want to parse
      */
     private $markdownFile = NULL;
     
     /**
-     * Individual lines of markdown
-     *
-     * @var array
+     * @var array    Holds every line that has been parsed
      */
     private $lines = [];
-
+    
+    /**
+     * Constructor
+     *
+     * @param string    The name of the file to parse
+     *
+     * @throws Exception    If the constructor argument $markdownFile is not a string
+     */
     public function __construct($markdownFile) {
 
         if( ! is_string($markdownFile) ) {
