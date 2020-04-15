@@ -25,7 +25,7 @@ class ConfigParser implements ParserInterface {
     /**
      * Parse a Mocha Config file
      *
-     * @return array The data that has been parsed
+     * @return array    Result of parsing the configuration file
      */
     public function parse() :  array {
 
