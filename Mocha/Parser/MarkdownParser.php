@@ -24,12 +24,12 @@ class MarkdownParser implements ParserInterface {
      *
      * @param string    The name of the file to parse
      *
-     * @throws Exception    If the constructor argument $markdownFile is not a string
+     * @throws InvalidArgumentException    If the constructor argument $markdownFile is not a string
      */
     public function __construct($markdownFile) {
 
         if( ! is_string($markdownFile) ) {
-            throw new \Exception("Data passed into constructor must be a string!");
+            throw new \InvalidArgumentException("Data passed into constructor must be a string!");
         }
 
         // Strip all of the \n characters for easier parsing
