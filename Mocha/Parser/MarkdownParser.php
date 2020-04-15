@@ -14,7 +14,7 @@ class MarkdownParser implements ParserInterface {
      *
      * @var string | NULL
      */
-    private $markdown_file = NULL;
+    private $markdownFile = NULL;
     
     /**
      * Individual lines of markdown
@@ -23,14 +23,14 @@ class MarkdownParser implements ParserInterface {
      */
     private $lines = [];
 
-    public function __construct($markdown_file) {
+    public function __construct($markdownFile) {
 
-        if( ! is_string($markdown_file) ) {
+        if( ! is_string($markdownFile) ) {
             throw new \Exception("Data passed into constructor must be a string!");
         }
 
         // Strip all of the \n characters for easier parsing
-        $this->markdown_file = str_replace("\n"," ", $markdown_file);
+        $this->markdownFile = str_replace("\n"," ", $markdownFile);
     }
     
     /**
@@ -54,7 +54,7 @@ class MarkdownParser implements ParserInterface {
     private function split() : array {
 
         // Split markdown into lines
-        $split = preg_split('#\n#',$this->markdown_file);
+        $split = preg_split('#\n#',$this->markdownFile);
         
         // Filter through split to remove empty lines
         $this->lines = array_filter($split, function($line) {
