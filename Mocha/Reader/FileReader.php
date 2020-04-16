@@ -25,6 +25,17 @@ class FileReader implements ReaderInterface {
     }
 
     /**
+     * Static factory method for creating a FileReader object
+     *
+     * @param string $filename    The name of the file we want to read
+     *
+     * @return FileReader
+     */
+    public static function create(string $filename) {
+        return new FileReader($filename);
+    }
+
+    /**
      * Open a file, read it and return as a string
      *
      * @param  string $file Path to file
