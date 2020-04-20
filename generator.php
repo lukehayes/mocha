@@ -20,10 +20,6 @@ function generate($build_dir, $pages_dir) {
     $parsedown = new Parsedown();
 
     $filesystem = new Filesystem();
-
-    $header = getIncludePartialStr('header');
-    $footer = getIncludePartialStr('footer');
-
     $filesystem->mkdir($config->build_dir);
 
     foreach( new DirectoryIterator( $config->pages_dir ) as $file ) {
@@ -37,16 +33,17 @@ function generate($build_dir, $pages_dir) {
                 );
 
             $created_file = "{$config->build_dir}/{$filename}.php";
-            injectContent($created_file, $header);
+
+            $filesystem->appendToFile($created_file, getIncludePartialStr('header'));
             injectContent($created_file, $markdown);
-            injectContent($created_file, $footer);
+            $filesystem->appendToFile($created_file, getIncludePartialStr('footer'));
+
             //$filesystem->dumpFile($created_file, $markdown);
 
         }
 
     }
 }
-
 
 /**
  * Inject string into a file
