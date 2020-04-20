@@ -18,7 +18,11 @@ function generate($build_dir, $pages_dir) {
 
     $config = ConfigParser::create()->parse();
     $parsedown = new Parsedown();
+
     $filesystem = new Filesystem();
+
+    $header = getIncludePartialStr('header');
+    $footer = getIncludePartialStr('footer');
 
     $filesystem->mkdir($config->build_dir);
 
@@ -26,19 +30,49 @@ function generate($build_dir, $pages_dir) {
 
         if( $file->getExtension() == "md") {
             $filename = substr($file->getFilename(), 0, -3);
-            dump($filename);
 
             $markdown = $parsedown->text(
                 FileReader::create(
                     $file->getPathname())->read()
                 );
 
-            $filesystem->dumpFile("{$config->build_dir}/{$filename}.html", $markdown);
+            $created_file = "{$config->build_dir}/{$filename}.php";
+            injectContent($created_file, $header);
+            injectContent($created_file, $markdown);
+            injectContent($created_file, $footer);
+            //$filesystem->dumpFile($created_file, $markdown);
 
         }
 
     }
-
 }
+
+
+/**
+ * Inject string into a file
+ *
+ * @param string $file    The name of the file to write to
+ * @param string $content    The name of the content to be written
+ */
+function injectContent(string $file, string $content) {
+    $filesystem = new Filesystem();
+    $filesystem->appendToFile($file, $content);
+}
+
+/**
+ * Get the include path as a string with a partial filename and return it.
+ * Meant to injected when a file is being converted from markdown into
+ * a site build
+ *
+ * @param string $file    The filename of the partial we want
+ *
+ * @return string    The name of the file to write to
+ */
+function getIncludePartialStr(string $partial) {
+    $root_path = dirname(__FILE__) . "/pages/partials/";
+    return "<?php include '$root_path{$partial}.php'; ?>";
+}
+
+
 
 
