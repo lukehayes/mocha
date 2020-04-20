@@ -4,6 +4,7 @@
 
 search_dirs: "Mocha"
 pages_dir: "pages"
+partials_dir: "pages/partials"
 site_url: "localhost:5000"
 site_title: "Default Mocha Build"
 build_dir: "site"
