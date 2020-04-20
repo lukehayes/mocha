@@ -57,7 +57,7 @@ function generate($build_dir, $pages_dir) {
  */
 function injectContent(string $file, string $content) {
     $filesystem = new Filesystem();
-    $filesystem->appendToFile($file, $content);
+    $filesystem->dumpFile($file, $content);
 }
 
 /**
