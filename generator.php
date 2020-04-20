@@ -14,7 +14,7 @@ use Symfony\Component\Filesystem\Filesystem;
  * @param $pages_dir    The name of the directory where the markdown is stored
  */
 function generate($build_dir, $pages_dir) {
-    echo "Generating site build...";
+    dump("Generating Site Build");
 
     $config = ConfigParser::create()->parse();
     $parsedown = new Parsedown();
@@ -34,6 +34,8 @@ function generate($build_dir, $pages_dir) {
 
             $created_file = "{$config->build_dir}/{$filename}.php";
 
+            dump("Built {$created_file}");
+
             $filesystem->appendToFile($created_file, getIncludePartialStr('header'));
             injectContent($created_file, $markdown);
             $filesystem->appendToFile($created_file, getIncludePartialStr('footer'));
@@ -43,6 +45,8 @@ function generate($build_dir, $pages_dir) {
         }
 
     }
+
+    dump("Done.");
 }
 
 /**
