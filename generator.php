@@ -71,7 +71,7 @@ function injectContent(string $file, string $content) {
  */
 function getIncludePartialStr(string $partial) {
     $root_path = dirname(__FILE__) . "/pages/partials/";
-    return "<?php include '$root_path{$partial}.php'; ?>";
+    return "\n<?php include '$root_path{$partial}.php'; ?>\n";
 }
 
 
