@@ -36,7 +36,7 @@ function generate($build_dir, $pages_dir) {
 
 
             $filesystem->appendToFile($created_file, getIncludePartialStr('header'));
-            injectContent($created_file, $markdown);
+            injectContent($created_file, $markdown, $filesystem);
             $filesystem->appendToFile($created_file, getIncludePartialStr('footer'));
 
             dump("Built {$created_file}");
@@ -56,8 +56,7 @@ function generate($build_dir, $pages_dir) {
  * @param string $file    The name of the file to write to
  * @param string $content    The name of the content to be written
  */
-function injectContent(string $file, string $content) {
-    $filesystem = new Filesystem();
+function injectContent(string $file, string $content, Filesystem $filesystem) {
     $filesystem->dumpFile($file, $content);
 }
 
