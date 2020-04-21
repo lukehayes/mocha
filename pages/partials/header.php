@@ -5,8 +5,11 @@
     <title>Mocha</title>
 
     <style>
-    h1 {color:red;}
-    p {color:blue;}
+    body {
+    font-family: "Inter";
+    max-width: 800px;
+    margin: 0 auto;
+    }
     </style>
 
 </head>
