@@ -34,7 +34,7 @@ function generate($build_dir, $pages_dir) {
 
             $created_file = "{$config->build_dir}/{$filename}.php";
 
-
+            $filesystem->dumpFile($created_file, "");
             $filesystem->appendToFile($created_file, getIncludePartialStr('header'));
             injectContent($created_file, $markdown, $filesystem);
             $filesystem->appendToFile($created_file, getIncludePartialStr('footer'));
@@ -57,7 +57,7 @@ function generate($build_dir, $pages_dir) {
  * @param string $content    The name of the content to be written
  */
 function injectContent(string $file, string $content, Filesystem $filesystem) {
-    $filesystem->dumpFile($file, $content);
+    $filesystem->appendToFile($file, $content);
 }
 
 /**
