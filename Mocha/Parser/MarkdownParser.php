@@ -1,6 +1,8 @@
 <?php
 namespace Mocha\Parser;
 
+use Mocha\Reader\FileReader;
+
 /**
  * Class that can parse Markdown and convert it
  * into its HTML equivalent
@@ -33,7 +35,7 @@ class MarkdownParser implements ParserInterface {
         }
 
         // Strip all of the \n characters for easier parsing
-        $this->markdownFile = $markdownFile;
+        $this->markdownFile = FileReader::create($markdownFile)->read() ;
     }
     
     /**
