@@ -10,7 +10,7 @@ class Tag {
 	/**
 	 * Any '@mocha-'' tag
 	 */
-	const MOCHA_TAG = "/@mocha-(\w+)\s([a-z]+|\d{2}-\d{2}-\d{2,4})/";
+	const MOCHA_TAG = "/@mocha-(\w+)\s([a-z]+|\d{2}-\d{2}-\d{2,4})/i";
 
 	/**
 	 * Represents the '@mocha-date' annotation
