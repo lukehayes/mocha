@@ -1,6 +1,6 @@
 # Mocha
 
-I'm building a simple static site generator in PHP.
+Project starting as a simple annotation parser with the end goal of making a static site generator.
 
 #### Todo List
 
