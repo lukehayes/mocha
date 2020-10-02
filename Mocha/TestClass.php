@@ -4,7 +4,7 @@ namespace Mocha;
 /**
  * Test Class
  * @mocha-page hello
- * @mocha-date 12.12.12
+ * @mocha-date 12-12-12
  */
 class TestClass 
 {
