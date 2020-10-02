@@ -27,7 +27,7 @@ class AnnotationMatch
      * @param string $value
      * @param string $options
      */
-    public function __construct($title, $value, $options) {
+    public function __construct($title, $value, $options = NULL) {
         $this->title = $title;
         $this->value = $value;
         $this->options = $options;
