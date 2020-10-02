@@ -17,20 +17,20 @@ class AnnotationMatch
     private $value = NULL;
 
     /**
-     * @var Extra options for the particular annotation.
+     * @var string|NULL The entire original tag that matched.
      */
-    private $options = NULL;
+    private $fullTag = NULL;
 
     /**
      * Constructor.
      * @param string $title
      * @param string $value
-     * @param string $options
+     * @param string $fullTag
      */
-    public function __construct($title, $value, $options = NULL) {
+    public function __construct($title, $value, $fullTag = NULL) {
         $this->title = $title;
         $this->value = $value;
-        $this->options = $options;
+        $this->fullTag = $fullTag;
     }
     
     /**
@@ -51,11 +51,11 @@ class AnnotationMatch
     }
 
     /**
-     * Options getter for an AnnotationMatch
+     * FullTag getter for an AnnotationMatch
      * @return string | NULL
      */
-    public function getOptions() {
-        return $this->options;
+    public function getFullTag() {
+        return $this->fullTag;
     }
 }
 
