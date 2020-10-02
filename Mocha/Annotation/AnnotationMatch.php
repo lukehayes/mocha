@@ -1,5 +1,5 @@
 <?php
-use Mocha\Annotation;
+namespace Mocha\Annotation;
 
 /**
  * An object to hold any match that is found when parsing
