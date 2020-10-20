@@ -1,4 +1,5 @@
-[//]: # (@mocha-title Page Title)
+--@ mocha-title A Page Title
+--@ mocha-category Programming
 
 # A title example
 
