@@ -6,7 +6,6 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
- *
  * Generate an entire site build from all of the markdown
  * pages available inside mocha-config/pages_dir
  * 
