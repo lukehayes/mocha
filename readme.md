@@ -6,7 +6,7 @@ Project starting as a simple annotation parser with the end goal of making a sta
 
 - [x] File Reading
 
-- [ ] Annotations parseing
+- [ ] Annotations parsing
 
 - [ ] Add markdown into project
 
