@@ -1,6 +1,6 @@
 # Mocha
 
-Project starting as a simple annotation parser with the end goal of making a static site generator.
+Project starting as a simple annotation parser(like Symfony or Doctrine) with the end goal of making a static site generator.
 
 #### Todo List
 
