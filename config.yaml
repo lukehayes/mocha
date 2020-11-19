@@ -1,6 +1,6 @@
 #
-# Mocha configuration options can be defined in this file
-#
+# Configuration settings that Mocha will use internally.
+# 
 
 search_dirs: "Mocha"
 pages_dir: "pages"
