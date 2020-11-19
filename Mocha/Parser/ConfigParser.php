@@ -6,8 +6,7 @@ use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;
 
 /**
- *  Config Parser can read in a configuation file
- *  written in YAML and parse it accordingly
+ *  Config Parser can read in a configuation file written in YAML and parse it accordingly.
  * 
  * @package Parser
  */
@@ -30,7 +29,7 @@ class ConfigParser implements ParserInterface {
      * 
      * @return string    Result of parsing the configuration file
      */
-    public function __construct($configFile = "mocha-config.yaml") {
+    public function __construct($configFile = "config.yaml") {
         $this->configFile = $configFile;
     }
     
