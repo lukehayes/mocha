@@ -1,7 +1,7 @@
 <?php
 namespace Mocha\Parser;
 
-use Mocha\Interfaces\ParserInterface;
+use Mocha\Interfaces\ReaderInterface;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;
 
@@ -10,7 +10,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
  * 
  * @package Parser
  */
-class ConfigParser implements ParserInterface {
+class ConfigParser implements ReaderInterface {
 
     /**
      * @var string | null   Path to the configuration file
@@ -55,13 +55,13 @@ class ConfigParser implements ParserInterface {
     }
 
     /**
-     * Parse a Mocha configuration file
+     * Read in the configuration file for this project.
      *
      * @throws ParseException
      *
-     * @return object    Result of parsing the configuration file
+     * @return object    Result of parsing the configuration file.
      */
-    public function parse() : object {
+    public function read() : object {
 
         try {
             $this->config = Yaml::parseFile($this->configFile);
