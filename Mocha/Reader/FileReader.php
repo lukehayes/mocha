@@ -32,7 +32,7 @@ class FileReader implements ReaderInterface {
      *
      * @return FileReader
      */
-    public static function create(string $filename) {
+    public static function create(string $filename) : FileReader {
         return new FileReader($filename);
     }
 
