@@ -3,6 +3,7 @@ namespace Mocha\Parser;
 
 use Mocha\Reader\FileReader;
 use Mocha\Annotation\AnnotationMatch;
+use Mocha\Interfaces\ParserInterface;
 
 /**
  * Class that can parse built in Mocha annotations.
