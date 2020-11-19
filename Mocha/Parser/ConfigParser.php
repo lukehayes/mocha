@@ -1,7 +1,7 @@
 <?php
 namespace Mocha\Parser;
 
-use Mocha\Parser\ParserInterface;
+use Mocha\Interfaces\ParserInterface;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;
 

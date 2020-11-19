@@ -1,5 +1,5 @@
 <?php
-namespace Mocha\Parser;
+namespace Mocha\Interfaces;
 
 /**
  * Parser Interface

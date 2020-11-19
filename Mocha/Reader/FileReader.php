@@ -2,6 +2,7 @@
 namespace Mocha\Reader;
 
 use Mocha\Exception\FileNotFoundException;
+use Mocha\Interfaces\ReaderInterface;
 
 /**
  * Read in contents from a file
@@ -20,7 +21,7 @@ class FileReader implements ReaderInterface {
      *
      * @param string $file Path to the file
      */
-    public function __construct($file) {
+    private function __construct($file) {
         $this->file = $file;
     }
 

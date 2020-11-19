@@ -2,6 +2,7 @@
 namespace Mocha\Parser;
 
 use Mocha\Reader\FileReader;
+use Mocha\Interfaces\ParserInterface;
 
 /**
  * Class that can parse Markdown and convert it
